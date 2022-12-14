@@ -3,7 +3,6 @@ package com.recyclerWithFab
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.Recycler
 import com.recyclerWithFab.databinding.ItemRecyclerBinding
 
 class AdapterForRecycler(private val list: List<RecyclerViewData>): RecyclerView.Adapter<AdapterForRecycler.ViewHolderForRecycler>() {
@@ -38,6 +37,7 @@ class AdapterForRecycler(private val list: List<RecyclerViewData>): RecyclerView
         fun bind(item: RecyclerViewData) {
 
             binding.tvNumber.text = item.text1
+            binding.tvNumbersInText.text = item.text2
 
 
 
