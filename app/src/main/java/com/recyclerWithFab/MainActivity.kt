@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
             layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
             adapter = adapterForRecycler
             adapterForRecycler.notifyDataSetChanged()
-            addOnScrollListener(listener)
+//            addOnScrollListener(listener)
         }
     }
 
